@@ -1,0 +1,100 @@
+h3{
+    text-align: center;
+    left: 50%;
+    font-size: 40px;
+}
+h4{
+    position: relative;
+    left: 20%;
+    font-size: 24px;
+}
+#confirmMsg{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 18px;
+    text-align: initial;
+    padding: 5px;
+}
+#form1, #form2{
+    line-height: 2em;
+    width: 300px;
+    /* margin: 0px auto;  */
+    position: relative;
+    top: 20%;
+    left: 25%;
+}
+.step{
+    width: 600px;
+    height: 50px;
+    /* border: 1px solid #888888; */
+    display: flex;
+    /* vertical-align: top; */
+    position: relative;
+    /* text-align: center; */
+    left: 20%;
+    margin: 10px;
+}
+.step>.step1{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #888888;
+}
+.step>.step2{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #888888;
+}
+.step>.step3{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #888888;
+}
+
+#form1>span, #form2>span{
+    color: red;
+}
+#form1>input, #form2>input{
+    padding: 5px 20px;
+    border: 2px solid #888888;
+    border-radius: 5px;
+}
+#form1>.ok, #form2>.ok{
+    color: green;
+}
+#form1>input:valid+.ok, #form2>input:valid+.ok{
+    display: inline;
+}
+#form1>input:invalid+.ok, #form2>input:invalid+.ok{
+    display: none;
+}
+
+
+/* button next 1 */
+#form1>#nx1{
+    position: relative;
+    /* left: 45%; */
+}
+
+/* button on page2 */
+#form2>#nx2{
+    position: relative;
+    margin: 50px;
+}
+/* button on page3 */
+#form3{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 20%;
+    /* border: 1px solid #888888; */
+}
+#form3>#confirm{
+    position: absolute;
+    bottom: -10%;
+    left: 70%;
+    margin: 50px;
+}
