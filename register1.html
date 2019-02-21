@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link href="register_css.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+        var nx1; // button 
+        var step1, step2, step3;
+        var name, msg;
+        var form1, form2, form3;
+        var form1_val, form2_val;
+        var confirmMsg;
+
+        var name, account, password, email, phone, fname, lname, date, credit;
+
+
+
+        window.onload = function(){ 
+            // page1
+            form1 = document.getElementById("form1");
+            // page1's next button
+            nx1 = document.getElementById("nx1");
+            
+            // get each step
+            step1 = document.getElementById("step1");
+            step2 = document.getElementById("step2");
+            step3 = document.getElementById("step3");
+
+            step1.style.backgroundColor = "yellowgreen";
+            step2.style.color = "grey";
+            step3.style.color = "grey";
+
+            // used to get input value
+            form1_val = document.forms["form1"];  
+        }
+
+        function checkInfo(){
+            if(name == ""){
+                name.focus();
+                return false;
+            }
+            else if(account == ""){
+                account.focus();
+                return false;
+            }
+            else if(password == ""){
+                password.focus();
+                return false;
+            }
+            else if(email == ""){
+                email.focus();
+                return false;
+            }
+            else if(phone == ""){
+                phone.focus();
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+    <h3>Join P2P Borrowing Platform</h3>
+    <h4>Register</h4>
+    
+    <div class="step">
+        <div id="step1" class="step1">
+            step1 : <br/>Set up your account
+        </div>
+        <div id="step2" class="step2">
+            step2 : <br/>Fill in your information
+        </div>
+        <div id="step3" class="step3">
+            step3 : <br/>Confirm your information
+        </div>
+    </div>
+
+    <form onsubmit="return checkInfo()" method="POST" action="./test2.html">
+
+
+        <div id = "confirmMsg"></div>
+
+        <!-- Page 1 -->
+        <div name="form1" id="form1">  
+            Username <span>*</span> <br/>
+            <input id="name" type="text" required />
+                <span class="ok">ok</span><br/>
+            Account <span>*</span> <br/>
+            <input id="account" type="text" placeholder="4~12 alphabets or numbers" required pattern="[0-9a-zA-Z]{4,12}" />
+                <span class="ok">ok</span><br/>
+            Password <span>*</span> <br/>
+            <input id="password" type="password" placeholder="8~16 alphabets or numbers" required pattern="[0-9a-zA-Z]{8,16}"/>
+                <span class="ok">ok</span><br/>
+            Email address <span>*</span> <br/>
+            <input id="email" type="email" required />
+                <span class="ok">ok</span><br/>
+            Phone number <br/>
+            <input id="phone" type="text" pattern="[0-9]{8,10}" required/>
+                <br/><br/>
+                <input id="nx1" type="submit" value="Next" />
+                <!-- <button id="nx1">Next</button> -->
+        </div>
+    </form>
+</body>
+</html
