@@ -1,13 +1,31 @@
-h3{
+body{
+    background-image: url(ad.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.main{
+    min-width: 600px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10% 30%;
+    /*background-color: aliceblue;*/
+}
+.titles_tile{
     text-align: center;
-    left: 50%;
-    font-size: 40px;
+    font-size: 45px;
+    margin: 0, 0, 10%;
 }
-h4{
+.titles_subtitle{
     position: relative;
-    left: 20%;
-    font-size: 24px;
+    font-size: 30px;
+    left: 5%;
+    margin:0;
 }
+
 #confirmMsg{
     position: absolute;
     top: 30%;
@@ -25,31 +43,29 @@ h4{
     left: 25%;
 }
 .step{
-    width: 600px;
-    height: 50px;
-    /* border: 1px solid #888888; */
+    min-width: 600px;
+    width: 100%;
+    height: 100px;
     display: flex;
-    /* vertical-align: top; */
-    position: relative;
-    /* text-align: center; */
-    left: 20%;
     margin: 10px;
+    justify-content: center;
+    font-weight: bolder;
 }
 .step>.step1{
     font-size: 18px;
-    width: 200px;
+    width: 33%;
     height: 50px;
     border: 1px solid #888888;
 }
 .step>.step2{
     font-size: 18px;
-    width: 200px;
+    width: 33%;
     height: 50px;
     border: 1px solid #888888;
 }
 .step>.step3{
     font-size: 18px;
-    width: 200px;
+    width: 33%;
     height: 50px;
     border: 1px solid #888888;
 }
@@ -82,25 +98,20 @@ h4{
 /* button on page2 */
 #form2>#nx2{
     position: relative;
-    margin: 50px;
+    /* margin: 50px; */
 }
 /* button on page3 */
 #form3{
     position: relative;
     width: 600px;
     height: 400px;
-    left: 20%;
+    left: 5%;
     /* border: 1px solid #888888; */
 }
-/* #form3>#confirm{
-    position: absolute;
-    bottom: -10%;
-    left: 70%;
-    margin: 50px;
-} */
-#form3>#submit{
-    position: absolute;
-    bottom: -10%;
-    left: 70%;
-    margin: 50px;
+#form3>div{
+    font-size: 18px;
+    font-weight: bolder;
+}
+#form3>input{
+    padding: 5px 10px;
 }
